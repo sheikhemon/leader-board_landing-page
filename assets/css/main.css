@@ -44,6 +44,7 @@
 body{
     font-family: var(--font-familyPoppins);
     background-color: var(--main-bg);
+    overflow: hidden;
 }
 html{
     font-size: 62.5%;
@@ -283,14 +284,21 @@ footer .copyright{
         margin-bottom: 0rem;
         position: sticky;
         top: 0;
-        height: 70px;
+        height: 100px;
     }
     nav{
         width: 100%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+    }
+    nav img{
+        padding-top: 1rem;
     }
     nav ul{
+        padding-top: .1rem 0;
+    }
+    .profile img{
         display: none;
     }
     /* Player Area */
@@ -336,6 +344,9 @@ footer .copyright{
 ----------------------*/
 @media only screen and (min-width: 669px) and (max-width: 991px) {
     /* header */
+    body{
+        overflow-x: hidden;
+    }
     .container{
         width: 100%;
     }
@@ -349,7 +360,7 @@ footer .copyright{
         display: flex;
         justify-content: center;
     }
-    nav ul{
+    .profile img{
         display: none;
     }
     .container{
